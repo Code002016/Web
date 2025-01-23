@@ -17,6 +17,8 @@ SQL:
 \([\s\n'"`]*(SELECT|UPDATE|DELETE)\s([^;]+\n)*.*\$_(POST|GET|REQUEST)
 ('|")[\s\n]*SELECT[^;]+\$_(POST|GET|REQUEST)
 ('|")[\s\n]*SELECT[^;]+\$
+SELECT\b.*?\bFROM\b
+
 
 Deserialize:
 (deserialize|unserialize|readObject|readResolve|ObjectInputStream|XMLDecoder|pickle\.load|yaml\.load)
