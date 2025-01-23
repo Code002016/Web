@@ -23,8 +23,6 @@ SELECT\b.*?\bFROM\b
 Deserialize:
 unserialize\(\$_GET.*\)
 (deserialize|unserialize|readObject|readResolve|ObjectInputStream|XMLDecoder|pickle\.load|yaml\.load)
-(O:\d+:".*?":\d+:\{.*?\}|s:\d+:"[^"]*";|a:\d+:\{.*?\}|b:0;|b:1;)
-(.*?=.*?(O:|a:|s:|b:|i:|d:|r:)[0-9]+.*?)
 (file_get_contents|read|input|fetch|request|stream|recv|socket.*recv|http.*post|fsockopen|fread)
 
 OS:
