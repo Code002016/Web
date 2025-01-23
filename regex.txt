@@ -6,7 +6,7 @@ XSS:
 (<|%3C)(script|img|iframe|svg|on\w+)(>|%3E)
 (['";]+.*(alert|confirm|prompt|document\.cookie|window\.location|eval)\s*\(.*\))
 
-(location|document\.URL|document\.documentURI|document\.referrer|window\.name|history\.pushState|history\.replaceState|localStorage|sessionStorage|cookie|window\.open|eval|setTimeout|setInterval
+(location|document\.URL|document\.documentURI|document\.referrer|window\.name|history\.pushState|history\.replaceState|localStorage|sessionStorage|cookie|window\.open|eval|setTimeout|setInterval)
 (innerHTML|outerHTML|insertAdjacentHTML|document\.write|document\.writeln|element\.setAttribute|element\.src|element\.href|element\.data|element\.code|element\.action|element\.formAction)
 (<script.*?>.*?<\/script>|<img.*?src=.*?javascript:.*?>|on\w+\s*=\s*["'].*?["']|<iframe.*?src=.*?>|<body.*?onload=.*?>)
 
